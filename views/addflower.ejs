@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blossom Valley</title>
+    <link rel="stylesheet" href="/styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="/logo.png" alt="Flower Shop Logo" style="height: 70px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container mt-5">
+            <!-- Search bar -->
+            <input type="text" id="searchInput" class="form-control mb-3" placeholder="Search flowers...">
+            
+            <div class="row" id="flowerCards">
+                <!-- Existing card elements -->
+                <!-- ... -->
+            </div>
+        </div>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/cart">Cart</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/tracking">Tracking</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/addflower">Add Flower</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/subscription">Subscription</a>
+              </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <br>
+        <div class="text-center"><h2>Add New Flower</h2></div>
+        <br>
+        <div class="text-center">
+            <form action="/addflower" method="POST">
+                <label for="title">Title:</label><br>
+                <input type="text" id="title" name="title" required><br><br>
+
+                <label for="img">Image:</label><br>
+                <input type="text" id="img" name="img" required><br><br>
+
+                <label for="descript">Description:</label><br>
+                <input type="text" id="descript" name="descript" required><br><br>
+
+                <label for="price">Price:</label><br>
+                <input type="number" id="price" name="price" required><br><br>
+
+                
+                <button type="submit">Add Flower</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

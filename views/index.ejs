@@ -40,7 +40,7 @@
                   <a class="nav-link" href="/tracking">Tracking</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="#">Rating</a>
+                  <a class="nav-link" href="/addflower">Add Flower</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/subscription">Subscription</a>
@@ -90,123 +90,24 @@
 
     <div class="container mt-5">
         <div class="row">
+            <% for(let i=0; i < flower.length; i++) { %>
             <div class="col-md-4">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">Blues</h5>
-                        <img src="https://i.pinimg.com/736x/19/40/7e/19407eded09389431e37cb9bb6df21e7.jpg" class="card-img-top" alt="Image">
-                        <p class="card-text">Blues</p>
-                        <p>White and blue flowers wrapped in white floral wrap</p>
-                        <p>price: $96</p>
-                        <a href="https://i.pinimg.com/736x/19/40/7e/19407eded09389431e37cb9bb6df21e7.jpg" class="btn btn-primary">Add to cart</a>
-                        <a href="/customise.html" class="btn btn-secondary ml-2">Customize</a>
+                        
+
+                            <h5 class="card-title"><%= flower[i].title %></h5>   
+                            <img src="<%= flower[i].img %>" class="card-img-top" alt="Image">
+                            <p class="card-text"><%= flower[i].title %></p>
+                            <p><%= flower[i].description %></p>
+                            <p>price: $<%= flower[i].price %></p>
+                            <a href="<%= flower[i].img %>" class="btn btn-primary">See image</a>
+                            <a href="/customise/<%= flower[i].flower_id %>" class="btn btn-secondary ml-2">Customize</a>
+                                    
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Roses</h5>
-                        <img src="https://i.pinimg.com/736x/68/4a/cf/684acf68d454bb82693d80ddae6613ec.jpg" class="card-img-top" alt="Image">
-                        <p class="card-text">Roses</p>
-                        <p>Roses and baby breaths wrapped in a black floral wrap</p>
-                        <p>price: $140</p>
-                        <a href="https://i.pinimg.com/736x/68/4a/cf/684acf68d454bb82693d80ddae6613ec.jpg" class="btn btn-primary">See image</a>
-                        <a href="customise.html" class="btn btn-secondary ml-2">Customize</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Purples</h5>
-                        <img src="https://i.pinimg.com/564x/b9/6f/57/b96f5708882eb968f6367c48cd8cddd6.jpg" class="card-img-top" alt="Image">
-                        <p class="card-text">Purples</p>
-                        <p>Purple and Pink flowers wrapped in a white floral wrap</p>
-                        <p>price: $127</p>
-                        <a href="https://i.pinimg.com/564x/b9/6f/57/b96f5708882eb968f6367c48cd8cddd6.jpg" class="btn btn-primary">See image</a>
-                        <a href="customise.html" class="btn btn-secondary ml-2">Customize</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Butterfly</h5>
-                        <img src="https://simply-blooms.com/wp-content/uploads/2022/10/Blink-1.jpg" class="card-img-top" alt="Image">
-                        <p class="card-text">Butterfly</p>
-                        <p>Purple, pink, white and red flowers wrapped in pink floral wrap</p>
-                        <p>price: $164</p>
-                        <a href="https://simply-blooms.com/wp-content/uploads/2022/10/Blink-1.jpg" class="btn btn-primary">See image</a>
-                        <a href="customise.html" class="btn btn-secondary ml-2">Customize</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Garden</h5>
-                        <img src="https://pbs.twimg.com/media/GJrGyK_XEAcK7Hj.jpg" class="card-img-top" alt="Image">
-                        <p class="card-text">Garden</p>
-                        <p>Flowers of all colours wrapped in a blue floral wrap tied with a pink ribbon</p>
-                        <p>price: $196</p>
-                        <a href="https://pbs.twimg.com/media/GJrGyK_XEAcK7Hj.jpg" class="btn btn-primary">See image</a>
-                        <a href="customise.html" class="btn btn-secondary ml-2">Customize</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Blue Ribbon</h5>
-                        <img src="https://i.pinimg.com/736x/99/5c/01/995c01c8b16a05d6f26862765cb07add.jpg" class="card-img-top" alt="Image">
-                        <p class="card-text">Blue Ribbon</p>
-                        <p>Blue ribbons made into flowers wrapped in a silverish black floral wrap</p>
-                        <p>price: $59</p>
-                        <a href="https://i.pinimg.com/736x/99/5c/01/995c01c8b16a05d6f26862765cb07add.jpg" class="btn btn-primary">See image</a>
-                        <a href="customise.html" class="btn btn-secondary ml-2">Customize</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Dried Ocean</h5>
-                        <img src="https://windflowerflorist.com/cdn/shop/files/Windflower-Florist-Bubbles_2000x.jpg?v=1718263103" class="card-img-top" alt="Image">
-                        <p class="card-text">Dried Ocean</p>
-                        <p>Dried and preserved blue and white flowers </p>
-                        <p>price: $245</p>
-                        <a href="https://windflowerflorist.com/cdn/shop/files/Windflower-Florist-Bubbles_2000x.jpg?v=1718263103" class="btn btn-primary">See image</a>
-                        <a href="customise.html" class="btn btn-secondary ml-2">Customize</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Sun Rise</h5>
-                        <img src="https://giftr.sg/cdn/shop/products/Jul_3mnK1IvdR_1024x1024.jpg?v=1688610290" class="card-img-top" alt="Image">
-                        <p class="card-text">Sun Rise</p>
-                        <p>Handmade crochet sunflowers along other yellow and white flowers wrapped in yellow floral wrap </p>
-                        <p>price: $125</p>
-                        <a href="https://giftr.sg/cdn/shop/products/Jul_3mnK1IvdR_1024x1024.jpg?v=1688610290" class="btn btn-primary">See image</a>
-                        <a href="customise.html" class="btn btn-secondary ml-2">Customize</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Lego Build</h5>
-                        <img src="https://i.pinimg.com/736x/96/5e/cf/965ecf8f4f1ac351756b2e8d7f3d9e6a.jpg" class="card-img-top" alt="Image">
-                        <p class="card-text">Lego Build</p>
-                        <p>Handmade lego roses with other coloured flowers wrapped in pink floral wrap</p>
-                        <p>price: $79</p>
-                        <a href="https://i.pinimg.com/736x/96/5e/cf/965ecf8f4f1ac351756b2e8d7f3d9e6a.jpg" class="btn btn-primary">See image</a>
-                        <a href="customise.html" class="btn btn-secondary ml-2">Customize</a>
-                    </div>
-                </div>
-            </div>
+            <% } %>
         </div>
     </div>
 
