@@ -3,12 +3,12 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <form action="/actionPage" method="post">
-        <label for="first name"> First Name:</label>
-        <input type="text" id="id" name="name" required> 
+    <form action="/addsub" method="post">
+        <label for="fname"> First Name:</label>
+        <input type="text" id="fname" name="fname" required> 
         <br/><br/>
-        <label for="last name"> Last Name:</label>
-        <input type="text" id="id" name="name" required> 
+        <label for="lname"> Last Name:</label>
+        <input type="text" id="lname" name="lname" required> 
         <br/><br/>
         <label for="gender"> Gender:</label>
         <input type="radio" id="gender" name="gender" value="Male">Male 
@@ -21,7 +21,7 @@
         <input type="tel" id="phone" name="phone" required>
         <br/><br/>
         <label for="dob"> Date of Birth:</label>
-        <input type="date" id="dob" name="dob">
+        <input type="date" id="dob" name="dob" required>
         <br/><br/>
         <input type="submit" value="Submit">
     </form>

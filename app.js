@@ -320,6 +320,23 @@ app.get('/deleteProduct/:id', (req,res) => {
     })
 })
 
+app.post('/addsub', (req,res) => {
+    // extract student data from the request body
+    const {fname,lname,gender,email,phone,dob} = req.body;
+    const sql  = "INSERT INTO subscription (fname, last, gender, email, number, dob) VALUES (?, ?, ?, ?, ?, ?)";
+    // insert the new student into the database
+    connection.query(sql, [fname,lname,gender,email,phone,dob], (error, results) =>{
+        if (error) {
+            //handle any error that occurs during the database operation
+            console.error("Error adding student:", error);
+            res.status(500).send('Error adding student');
+        } else {
+            //send a success response 
+            res.redirect('/subscription');
+        }
+    })
+})
+
 // // For reference
 // app.get('/student/:id', (req,res) => {
 //     //Extract the student ID from the request parameters

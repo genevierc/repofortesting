@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 16, 2024 at 06:00 PM
+-- Generation Time: Jul 16, 2024 at 07:32 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -143,21 +143,22 @@ CREATE TABLE `review` (
 
 CREATE TABLE `subscription` (
   `customerid` int(11) NOT NULL,
-  `First Name` varchar(60) NOT NULL,
-  `Last` varchar(11) NOT NULL,
-  `Gender` varchar(60) NOT NULL,
-  `Email` varchar(200) NOT NULL,
-  `Phone number` int(60) NOT NULL,
-  `DOB` date NOT NULL
+  `fname` varchar(60) NOT NULL,
+  `last` varchar(11) NOT NULL,
+  `gender` varchar(60) NOT NULL,
+  `email` varchar(200) NOT NULL,
+  `number` int(60) NOT NULL,
+  `dob` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `subscription`
 --
 
-INSERT INTO `subscription` (`customerid`, `First Name`, `Last`, `Gender`, `Email`, `Phone number`, `DOB`) VALUES
+INSERT INTO `subscription` (`customerid`, `fname`, `last`, `gender`, `email`, `number`, `dob`) VALUES
 (0, 'Julian', 'Chan', 'Male', 'Julian@gmail.com', 59273968, '2004-08-27'),
-(2, 'Mary', 'Catty', 'Female', 'Mary@gmail.com', 92057284, '2009-07-05');
+(2, 'Mary', 'Catty', 'Female', 'Mary@gmail.com', 92057284, '2009-07-05'),
+(3, 'tet', 'tet', 'Male', 'tet@tet.com', 87654321, '2024-07-17');
 
 -- --------------------------------------------------------
 
@@ -284,7 +285,7 @@ ALTER TABLE `review`
 -- AUTO_INCREMENT for table `subscription`
 --
 ALTER TABLE `subscription`
-  MODIFY `customerid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `customerid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `tracking`
