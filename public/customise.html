@@ -1,0 +1,42 @@
+<head>
+    <h1>customise Form</h1>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <form action="/actionPage" method="post">
+        <label for="stuffedtoys"> stuffed toys:</label>
+        <p><img src="https://m.media-amazon.com/images/I/91oxSXgVD6L.jpg" class="card-img-top" style="width: 15%" alt="Image">
+        <img src="https://www.manhattantoy.com/cdn/shop/products/wbapwclvht5itzsq7bv4.jpg?v=1590507281" class="card-img-top" style="width: 15%" alt="Image">
+        <img src="https://m.media-amazon.com/images/I/61rMhUUsdeL._AC_UF894,1000_QL80_.jpg" class="card-img-top" style="width: 15%" alt="Image">
+        <img src="https://target.scene7.com/is/image/Target/GUEST_1f4247fa-4bbe-4def-8f78-f010ee15aba1?wid=488&hei=488&fmt=pjpeg" class="card-img-top" style="width: 15%" alt="Image"></p>
+        <input type="radio" id="stuffedtoys" name="stuffedtoys" value="Teddy Bear">Teddy Bear $9                   
+        <input type="radio" id="stuffedtoys" name="stuffedtoys" value="Bunny">Bunny $8
+        <input type="radio" id="stuffedtoys" name="stuffedtoys" value="Cat">Cat $8
+        <input type="radio" id="stuffedtoys" name="stuffedtoys" value="Dog">Dog $8
+        <input type="radio" id="stuffedtoys" name="stuffedtoys" value="Dog">special request</p> 
+        <label for="special request"> Any specific stuffed toys that you want to add:</label>
+        <p><textarea id="special request" name="special request" rows="4" cols="50" required></textarea></p>
+        <br/><br/>
+        <label for="chocolates"> chocolates:</label>
+        <p><input type="radio" id="chocolates" name="chocolates" value="milk chocolates"> Milk chocolates $13
+        <input type="radio" id="chocolates" name="chocolates" value="Dark chocolates">Dark chocolates $10
+        <input type="radio" id="chocolates" name="chocolates" value="White chocolates">White chocolates $12
+        <input type="radio" id="chocolates" name="chocolates" value="salted caramel chocolates">Salted caramel chocolates $18</p> 
+        <br/><br/>
+        <label for="special message"> Any special message:</label>
+        <p><input type="radio" id="special message" name="special message" value="yes"> yes $5
+        <input type="radio" id="special message" name="special message" value="no">no $0</p>
+        <label for="special message"> What do you want written:</label>
+        <p><textarea id="special message" name="special message" rows="4" cols="50" required></textarea></p>
+        <br/><br/>
+        <label for="special packaging"> Any special packaging:</label>
+        <p><input type="radio" id="special packaging" name="special packaging" value="yes"> yes $5
+        <input type="radio" id="special packaging" name="special packaging" value="no">no $0</p>
+        <label for="special packaging"> How do you want your package to be like:</label>
+        <p><textarea id="special packaging" name="special packaging" rows="4" cols="50" required></textarea></p>
+        <br/><br/>
+        <input type="submit" value="add to cart">
+    </form>
+
+<p><a href="/">Back</a> to intro page.</p>
+</body>
